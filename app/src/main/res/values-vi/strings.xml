@@ -25,4 +25,13 @@
 
     <string name="username">Tên người dùng</string>
     <string name="emailaddress">tennguoidung@gmail.com</string>
+
+    <string name="address">Địa chỉ liên hệ</string>
+    <string name="schedule_of_water_supply_stopping">Lịch trình ngừng cung cấp nước</string>
+    <string name="schedule_of_electric_supply_stopping">Lịch trình ngừng cung cấp điện</string>
+    <string name="electricity_price">Giá bán điện</string>
+    <string name="collection_point">Điểm thu tiền</string>
+    <string name="procedure">Thủ tục</string>
+    <string name="safety_and_saving">An toàn và tiết kiệm</string>
+    <string name="water_selling_price">Giá bán nước</string>
 </resources>

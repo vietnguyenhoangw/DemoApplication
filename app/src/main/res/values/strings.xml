@@ -23,4 +23,12 @@
     <string name="selected_language">English</string>
     <string name="username">User name</string>
     <string name="emailaddress">username@gmail.com</string>
+    <string name="address">Address</string>
+    <string name="schedule_of_water_supply_stopping">Schedule of water supply stopping</string>
+    <string name="schedule_of_electric_supply_stopping">Schedule of electric supply stopping</string>
+    <string name="electricity_price">Electricity price</string>
+    <string name="collection_point">Collection point</string>
+    <string name="procedure">Procedure</string>
+    <string name="safety_and_saving">Safety and saving</string>
+    <string name="water_selling_price">Water selling price</string>
 </resources>
