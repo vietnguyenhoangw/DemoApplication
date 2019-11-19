@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@drawable/background_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_logoHeader"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/website_membership"/>
+
+        <TextView
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:id="@+id/tv_appTitle"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_below="@id/img_logoHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Sologan will be here"
+            android:layout_below="@id/tv_appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:text="@string/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_language_select"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_alternates_light"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp"
+                    android:text="@string/languagues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/ic_expand_more_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:paddingLeft="15dp"
+            android:hint="@string/user_name"
+            android:background="@drawable/background_input"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:paddingLeft="15dp"
+            android:hint="@string/password"
+            android:background="@drawable/background_input"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        
+        <Button
+            android:id="@+id/btn_signin"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="#686868"
+            android:text="@string/signin"
+            android:background="@drawable/background_btn_primary"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="#ffffff"
+            android:text="@string/registernow"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

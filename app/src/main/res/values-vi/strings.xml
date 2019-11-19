@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo App</string>
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="signin">Đăng nhập</string>
+    <string name="registernow">Đăng kí ngay tài khoản mới.</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_setting">Cài đặt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">Cài đặt</string>
+    <string name="languagues">Ngôn ngữ</string>
+    <string name="age">Tuổi</string>
+    <string name="device">Thiết bị</string>
+    <string name="driverlicence">Bằng lái</string>
+    <string name="waterbill">Hóa đơn nước</string>
+    <string name="electricbill">Hóa đơn điện</string>
+    <string name="news">Tin mới</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="language_select">Ngôn ngữ</string>
+    <string name="accept">Đồng ý</string>
+    <string name="selected_language">Việt Nam</string>
+
+    <string name="username">Tên người dùng</string>
+    <string name="emailaddress">tennguoidung@gmail.com</string>
+</resources>
