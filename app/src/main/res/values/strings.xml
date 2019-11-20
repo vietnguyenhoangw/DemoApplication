@@ -35,4 +35,10 @@
     <string name="regions">Regions</string>
     <string name="provinces">Provinces</string>
     <string name="time">Time:</string>
+    <string name="electrical_company">Electrical company</string>
+    <string name="startday">Start day</string>
+    <string name="endday">End day</string>
+    <string name="startdate">Start date</string>
+    <string name="enddate">End date</string>
+    <string name="donhavaanyschdule">There is no scheduled power outage during this period</string>
 </resources>

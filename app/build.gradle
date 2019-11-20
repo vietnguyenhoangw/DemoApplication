@@ -35,4 +35,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 }

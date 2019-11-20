@@ -37,4 +37,12 @@
     <string name="province_and_city">Province / City</string>
     <string name="regions">Tỉnh Thành</string>
     <string name="provinces">Khu Vực</string>
+
+    <string name="time">Thời gian:</string>
+    <string name="electrical_company">Công ty điện lực</string>
+    <string name="startday">Ngày bắt đầu</string>
+    <string name="endday">Ngày kết thúc</string>
+    <string name="startdate">Ngày bắt đầu</string>
+    <string name="enddate">Ngày kết thúc</string>
+    <string name="donhavaanyschdule">Không có lịch ngừng cung cấp điện trong khoảng thời gian này.</string>
 </resources>

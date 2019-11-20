@@ -51,15 +51,16 @@ public class ElectricBillActivity extends AppCompatActivity {
     private void menu_select(int i) {
         switch (i) {
             case 0:
-                Intent intent = new Intent(ElectricBillActivity.this, AddressActivity.class);
-                startActivity(intent);
-
+                Intent i1 = new Intent(ElectricBillActivity.this, AddressActivity.class);
+                startActivity(i1);
                 break;
             case 1:
-                Toast.makeText(this, "1", Toast.LENGTH_SHORT).show();
+                Intent i2 = new Intent(ElectricBillActivity.this, ScheduleSupplyStopActivity.class);
+                startActivity(i2);
                 break;
             case 2:
-                Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+                Intent i3 = new Intent(ElectricBillActivity.this, ElectricityPriceActivity.class);
+                startActivity(i3);
                 break;
                 default:
                     return;
