@@ -34,4 +34,7 @@
     <string name="procedure">Thủ tục</string>
     <string name="safety_and_saving">An toàn và tiết kiệm</string>
     <string name="water_selling_price">Giá bán nước</string>
+    <string name="province_and_city">Province / City</string>
+    <string name="regions">Tỉnh Thành</string>
+    <string name="provinces">Khu Vực</string>
 </resources>

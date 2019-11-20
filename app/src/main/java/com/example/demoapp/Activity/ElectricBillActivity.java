@@ -2,8 +2,12 @@ package com.example.demoapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.demoapp.Adapter.ElectricBillMenuAdapter;
 import com.example.demoapp.Object.BillMenu;
@@ -35,5 +39,30 @@ public class ElectricBillActivity extends AppCompatActivity {
                 ,electricBillMenuArrayList);
 
         listView.setAdapter(electricBillMenuAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                menu_select(i);
+            }
+        });
+    }
+
+    private void menu_select(int i) {
+        switch (i) {
+            case 0:
+                Intent intent = new Intent(ElectricBillActivity.this, AddressActivity.class);
+                startActivity(intent);
+
+                break;
+            case 1:
+                Toast.makeText(this, "1", Toast.LENGTH_SHORT).show();
+                break;
+            case 2:
+                Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+                break;
+                default:
+                    return;
+        }
     }
 }

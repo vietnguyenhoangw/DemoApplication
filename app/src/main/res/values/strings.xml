@@ -31,4 +31,8 @@
     <string name="procedure">Procedure</string>
     <string name="safety_and_saving">Safety and saving</string>
     <string name="water_selling_price">Water selling price</string>
+    <string name="province_and_city">Province / City</string>
+    <string name="regions">Regions</string>
+    <string name="provinces">Provinces</string>
+    <string name="time">Time:</string>
 </resources>

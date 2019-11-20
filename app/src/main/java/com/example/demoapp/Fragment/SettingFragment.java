@@ -20,19 +20,21 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.example.demoapp.Adapter.ElectricBillMenuAdapter;
 import com.example.demoapp.MainActivity;
+import com.example.demoapp.Object.BillMenu;
 import com.example.demoapp.R;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 
 public class SettingFragment extends Fragment {
-
-
 
     public SettingFragment() {
 
@@ -48,6 +50,5 @@ public class SettingFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
     }
 }
