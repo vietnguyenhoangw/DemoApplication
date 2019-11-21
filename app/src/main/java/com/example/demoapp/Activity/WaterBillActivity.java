@@ -2,8 +2,12 @@ package com.example.demoapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.demoapp.Adapter.ElectricBillMenuAdapter;
 import com.example.demoapp.Adapter.WaterBillMenuAdapter;
@@ -36,5 +40,43 @@ public class WaterBillActivity extends AppCompatActivity {
                 ,waterBillMenuArrayList);
 
         listView.setAdapter(waterBillMenuAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                menu_select(i);
+            }
+        });
+    }
+
+    private void menu_select(int i) {
+        switch (i) {
+            case 0:
+                Intent i1 = new Intent(WaterBillActivity.this, AddressActivity.class);
+                i1.putExtra("flag", "water");
+                startActivity(i1);
+                break;
+            case 1:
+                Intent i2 = new Intent(WaterBillActivity.this, ScheduleSupplyStopActivity.class);
+                i2.putExtra("flag", "water");
+                startActivity(i2);
+                break;
+            case 2:
+                Intent i3 = new Intent(WaterBillActivity.this, ElectricityPriceActivity.class);
+                i3.putExtra("flag", "water");
+                startActivity(i3);
+                break;
+            case 3:
+                Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+                break;
+            case 4:
+                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+                break;
+            case 5:
+                Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                return;
+        }
     }
 }

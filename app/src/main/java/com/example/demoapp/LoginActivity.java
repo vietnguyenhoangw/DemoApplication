@@ -1,7 +1,5 @@
 package com.example.demoapp;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -23,26 +23,41 @@ public class LoginActivity extends AppCompatActivity {
 
     Button btnButton;
     TextView tvLanguageSelect;
+    ImageView icon;
+    EditText edtUsername, edtPassword;
 
     Locale mLocale;
     RadioGroup rdGR;
     RadioButton rd1, rd2;
+
+    String language;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnButton = findViewById(R.id.btn_signin);
-        tvLanguageSelect = findViewById(R.id.tv_language_select);
+        createWidget();
+        setLanguageIcon();
 
         btnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
 
-                finish();
+                if (edtUsername.getText().length() <= 0) {
+                    edtUsername.setError(getString(R.string.username_empty));
+                }
+                else {
+                    if (edtPassword.getText().length() <= 0) {
+                        edtPassword.setError(getString(R.string.password_empty));
+                    }
+                    else {
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                        finish();
+                    }
+                }
             }
         });
 
@@ -52,6 +67,25 @@ public class LoginActivity extends AppCompatActivity {
                 craeteDialog();
             }
         });
+    }
+
+    // Create widget
+    private void createWidget() {
+        btnButton = findViewById(R.id.btn_signin);
+        tvLanguageSelect = findViewById(R.id.tv_language_select);
+        icon = findViewById(R.id.img_languague);
+        edtUsername = findViewById(R.id.edt_username);
+        edtPassword = findViewById(R.id.edt_password);
+    }
+
+    // check to set icon language
+    private void setLanguageIcon() {
+        if (tvLanguageSelect.getText().equals("Language")) {
+            icon.setImageResource(R.drawable.united_states_of_america_flag_country_nation_union_empire_33135);
+        }
+        else {
+            icon.setImageResource(R.drawable.vietnam_flag_country_nation_union_empire_33148);
+        }
     }
 
     // Languague list select
@@ -79,11 +113,13 @@ public class LoginActivity extends AppCompatActivity {
                         switch (rdGR.getCheckedRadioButtonId()) {
                             case R.id.radioButton1:
                                 mLocale = new Locale("en", "US");
+                                language = "English";
                                 onChangeLanguge(mLocale);
                                 alertDialogBuilder.dismiss();
                                 break;
                             case R.id.radioButton2:
                                 mLocale = new Locale("vi", "VN");
+                                language = "Tiếng Việt";
                                 onChangeLanguge(mLocale);
                                 alertDialogBuilder.dismiss();
                                 break;

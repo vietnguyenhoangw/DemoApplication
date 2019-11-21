@@ -44,5 +44,10 @@
     <string name="endday">Ngày kết thúc</string>
     <string name="startdate">Ngày bắt đầu</string>
     <string name="enddate">Ngày kết thúc</string>
-    <string name="donhavaanyschdule">Không có lịch ngừng cung cấp điện trong khoảng thời gian này.</string>
+
+    <string name="watercompany">Water company</string>
+    <string name="donhavaanyschdule_electric">Không có lịch ngừng cung cấp điện trong khoảng thời gian này</string>
+    <string name="donhavaanyschdule_water">Không có lịch ngừng cung cấp nước trong khoảng thời gian này</string>
+    <string name="username_empty">Tên đăng nhập rỗng</string>
+    <string name="password_empty">Password rỗng</string>
 </resources>

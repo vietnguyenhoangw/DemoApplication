@@ -52,15 +52,27 @@ public class ElectricBillActivity extends AppCompatActivity {
         switch (i) {
             case 0:
                 Intent i1 = new Intent(ElectricBillActivity.this, AddressActivity.class);
+                i1.putExtra("flag", "electric");
                 startActivity(i1);
                 break;
             case 1:
                 Intent i2 = new Intent(ElectricBillActivity.this, ScheduleSupplyStopActivity.class);
+                i2.putExtra("flag", "electric");
                 startActivity(i2);
                 break;
             case 2:
                 Intent i3 = new Intent(ElectricBillActivity.this, ElectricityPriceActivity.class);
+                i3.putExtra("flag", "electric");
                 startActivity(i3);
+                break;
+            case 3:
+                Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+                break;
+            case 4:
+                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+                break;
+            case 5:
+                Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
                 break;
                 default:
                     return;

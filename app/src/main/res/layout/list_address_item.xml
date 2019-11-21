@@ -18,6 +18,7 @@
             android:layout_height="50dp"/>
 
         <TextView
+            android:fontFamily="@font/montserrat_alternates_light"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/menu_list_icon"
             android:id="@+id/name"
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:fontFamily="@font/montserrat_alternates_light"
             android:textStyle="bold"
             android:layout_marginLeft="10dp"
             android:layout_below="@id/name"
@@ -42,6 +44,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/time"
                 android:text="@string/time"
@@ -49,6 +52,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"

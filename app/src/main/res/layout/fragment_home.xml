@@ -32,6 +32,7 @@
                 android:src="@drawable/account_accountant" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:singleLine="true"
                 android:maxEms="5"
@@ -63,6 +64,7 @@
                 android:src="@drawable/account_invoicing" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -94,6 +96,7 @@
                 android:src="@drawable/fleet" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:singleLine="true"
                 android:maxEms="5"
@@ -131,6 +134,7 @@
                 android:src="@drawable/event" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -161,6 +165,7 @@
                 android:src="@drawable/website_livechat" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -191,6 +196,7 @@
                 android:src="@drawable/website_theme_install" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -228,6 +234,7 @@
                 android:src="@drawable/website_hr_recruitment" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -258,6 +265,7 @@
                 android:src="@drawable/website_crm_partner_assign" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -288,6 +296,7 @@
                 android:src="@drawable/sale_management" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -325,6 +334,7 @@
                 android:src="@drawable/mrp" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -355,6 +365,7 @@
                 android:src="@drawable/mass_mailing" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"
@@ -385,6 +396,7 @@
                 android:src="@drawable/website_membership" />
 
             <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
                 android:textSize="12sp"
                 android:maxEms="5"
                 android:singleLine="true"

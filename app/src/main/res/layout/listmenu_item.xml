@@ -17,6 +17,7 @@
             android:layout_height="50dp"/>
 
         <TextView
+            android:fontFamily="@font/montserrat_alternates_light"
             android:textStyle="bold"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"

@@ -40,5 +40,10 @@
     <string name="endday">End day</string>
     <string name="startdate">Start date</string>
     <string name="enddate">End date</string>
-    <string name="donhavaanyschdule">There is no scheduled power outage during this period</string>
+    <string name="watercompany">Water company</string>
+    <string name="donhavaanyschdule_electric">There is no scheduled power outage during this period</string>
+    <string name="donhavaanyschdule_water">There is no scheduled water outage during this period</string>
+    <string name="username_empty">User name is empty</string>
+    <string name="password_empty">Password is empty</string>
+
 </resources>
