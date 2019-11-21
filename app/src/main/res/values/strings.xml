@@ -46,4 +46,10 @@
     <string name="username_empty">User name is empty</string>
     <string name="password_empty">Password is empty</string>
 
+    <string name="menu_retail_price">Electricity retail price</string>
+    <string name="menu_holesale_price">Holesale price of electricity</string>
+    <string name="menu_hourly_selling_price">Hourly selling price of electricity</string>
+    <string name="menu_special_type_price">Electricity price for poor households, low income</string>
+    <string name="menu_electricity_caculator">Electricity caculator</string>
+
 </resources>

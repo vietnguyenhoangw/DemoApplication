@@ -44,20 +44,25 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (edtUsername.getText().length() <= 0) {
-                    edtUsername.setError(getString(R.string.username_empty));
-                }
-                else {
-                    if (edtPassword.getText().length() <= 0) {
-                        edtPassword.setError(getString(R.string.password_empty));
-                    }
-                    else {
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(intent);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
 
-                        finish();
-                    }
-                }
+                finish();
+
+//                if (edtUsername.getText().length() <= 0) {
+//                    edtUsername.setError(getString(R.string.username_empty));
+//                }
+//                else {
+//                    if (edtPassword.getText().length() <= 0) {
+//                        edtPassword.setError(getString(R.string.password_empty));
+//                    }
+//                    else {
+//                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                        startActivity(intent);
+//
+//                        finish();
+//                    }
+//                }
             }
         });
 

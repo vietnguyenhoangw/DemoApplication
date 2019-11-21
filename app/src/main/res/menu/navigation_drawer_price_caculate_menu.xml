@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_retail_price"
+        android:title="@string/menu_retail_price" />
+    <item
+        android:id="@+id/menu_holesale_price"
+        android:title="@string/menu_holesale_price" />
+    <item
+        android:id="@+id/menu_hourly_selling_price"
+        android:title="@string/menu_hourly_selling_price"/>
+    <item
+        android:id="@+id/menu_special_type_price"
+        android:title="@string/menu_special_type_price"/>
+    <item
+        android:id="@+id/menu_electricity_caculator"
+        android:title="@string/menu_electricity_caculator"/>
+</menu>
