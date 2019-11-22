@@ -35,6 +35,6 @@ public class HourlySellingFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         photoView = (PhotoView) view.findViewById(R.id.photo_view);
-        photoView.setImageResource(R.drawable.giabanledien);
+        photoView.setImageResource(R.drawable.hourly_selling_price);
     }
 }

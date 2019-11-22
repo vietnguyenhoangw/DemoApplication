@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Water   -->
+    <item
+        android:id="@+id/menu_retail_price_water"
+        android:title="@string/menu_retail_price_water" />
+
+    <!--  Electric  -->
     <item
         android:id="@+id/menu_retail_price"
         android:title="@string/menu_retail_price" />

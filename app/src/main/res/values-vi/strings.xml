@@ -50,4 +50,16 @@
     <string name="donhavaanyschdule_water">Không có lịch ngừng cung cấp nước trong khoảng thời gian này</string>
     <string name="username_empty">Tên đăng nhập rỗng</string>
     <string name="password_empty">Password rỗng</string>
+
+    <string name="menu_retail_price">Giá bán lẻ điện</string>
+    <string name="menu_holesale_price">Giá buôn điện</string>
+    <string name="menu_hourly_selling_price">Giá bán điện theo giờ</string>
+    <string name="menu_special_type_price">Giá bán điện cho hộ nghèo, thu nhập thấp</string>
+    <string name="menu_electricity_caculator">Tính giá điện</string>
+    <string name="old_index">Chỉ số cữ</string>
+    <string name="new_index">Chỉ số mới</string>
+    <string name="total_price">Thành tiền</string>
+
+    <string name="menu_retail_price_water">Giá bán lẻ nước</string>
+    <string name="invalid">Không hợp lệ</string>
 </resources>

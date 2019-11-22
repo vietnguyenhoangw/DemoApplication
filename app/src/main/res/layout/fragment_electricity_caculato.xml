@@ -1,14 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.ElectricityCaculatoFragment">
+    android:orientation="vertical"
+    tools:context=".Activity.AddressActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:id="@+id/tv_company_type"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/old_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:background="@drawable/background_boder_gray"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edt_oldindex"
+            android:layout_width="fill_parent"
+            android:foregroundGravity="center_vertical|right"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/new_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:id="@+id/edt_newindex"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_boder_gray"
+            android:foregroundGravity="center_vertical|right" />
+
+        <Button
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:id="@+id/btnAccept"
+            android:textColor="@android:color/white"
+            android:text="@string/accept"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_btn_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/layout_result"
+        android:background="@drawable/background_menu_item"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/menu_list_icon"
+            android:layout_margin="5dp"
+            android:src="@drawable/payment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/ln_oldIndex"
+            android:layout_toRightOf="@id/menu_list_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_marginLeft="10dp"
+                android:text="@string/old_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/address_detail"
+                android:layout_toRightOf="@id/menu_list_icon"
+                android:id="@+id/tv_oldIndexResult"
+                android:text="0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_newIndex"
+            android:layout_below="@id/ln_oldIndex"
+            android:layout_toRightOf="@id/menu_list_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_marginLeft="10dp"
+                android:text="@string/new_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/address_detail"
+                android:layout_toRightOf="@id/menu_list_icon"
+                android:id="@+id/tv_newIndexResult"
+                android:text="0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ln_newIndex"
+            android:layout_toRightOf="@id/menu_list_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/time"
+                android:text="@string/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/montserrat_alternates_light"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/address_detail"
+                android:layout_toRightOf="@id/menu_list_icon"
+                android:id="@+id/tv_total_price_result"
+                android:text="0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

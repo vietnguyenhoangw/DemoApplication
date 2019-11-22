@@ -61,7 +61,7 @@ public class ElectricBillActivity extends AppCompatActivity {
                 startActivity(i2);
                 break;
             case 2:
-                Intent i3 = new Intent(ElectricBillActivity.this, ElectricityPriceActivity.class);
+                Intent i3 = new Intent(ElectricBillActivity.this, PriceActivity.class);
                 i3.putExtra("flag", "electric");
                 startActivity(i3);
                 break;

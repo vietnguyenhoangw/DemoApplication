@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.demoapp.Adapter.ElectricBillMenuAdapter;
 import com.example.demoapp.Adapter.WaterBillMenuAdapter;
 import com.example.demoapp.Object.BillMenu;
 import com.example.demoapp.R;
@@ -62,7 +61,7 @@ public class WaterBillActivity extends AppCompatActivity {
                 startActivity(i2);
                 break;
             case 2:
-                Intent i3 = new Intent(WaterBillActivity.this, ElectricityPriceActivity.class);
+                Intent i3 = new Intent(WaterBillActivity.this, PriceActivity.class);
                 i3.putExtra("flag", "water");
                 startActivity(i3);
                 break;
